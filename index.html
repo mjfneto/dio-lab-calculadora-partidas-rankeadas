@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 110 110%22><text y=%22.9em%22 font-size=%2290%22>⚖️</text></svg>"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculadora de Partidas Rankeadas</title>
+  </head>
+  <body>
+    <main>
+      <h1>Calculadora de Partidas Rankeadas</h1>
+
+      <form>
+        <label for="wins">
+          Vitórias
+          <input required type="number" name="wins" id="wins" value="0" min="0"
+        /></label>
+
+        <label for="losses">
+          Derrotas
+          <input
+            required
+            type="number"
+            name="losses"
+            id="losses"
+            value="0"
+            min="0"
+          />
+        </label>
+
+        <button type="submit">Calcular</button>
+      </form>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

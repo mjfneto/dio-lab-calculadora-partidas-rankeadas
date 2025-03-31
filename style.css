@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 0.875rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+main {
+  margin: 0 1rem;
+}
+
+form {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+form label {
+  flex-basis: 47%;
+  margin: 1rem 0;
+}
+
+form label + label {
+  margin-left: 6%;
+}
+
+form input[type='number'] {
+  width: 100%;
+  text-align: center;
+}
+
+form button[type='submit'] {
+  flex-basis: 100%;
+}
+
+@media screen and (min-width: 640px) {
+  html {
+    font-size: 1rem;
+  }
+}
